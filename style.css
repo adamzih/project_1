@@ -1,0 +1,228 @@
+* {
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Philosopher;
+    src: format(Philosopher);
+    src: url(../Project/fonts/Philosopher.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto!';
+    src: url('../Project/fonts/Roboto-Regular.eot');
+    src: url('../Project/fonts/Roboto-Regular.ttf') format('embedded-opentype'),
+         url('../Project/fonts/Roboto-Regular.woff') format('woff');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Roboto!';
+    src: url('../Project/fonts/Roboto-Bold.eot');
+    src: url('../Project/fonts/Roboto-Bold.ttf') format('embedded-opentype'),
+         url('../Project/fonts/Roboto-Bold.woff') format('woff');
+    font-style: normal;
+    font-weight: 700;
+}
+
+html {
+    font-family:"Roboto!";
+}
+
+body {
+    background-color: #FFE2B0;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    margin-right: 100px;
+    font-weight: 700;
+    }
+    
+
+.navigation {
+    font-size: 18px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.navigation > *:last-child {
+    margin-right: 0;
+}
+
+.img_background {
+    width: 1640px;
+    height: 730px;   
+}
+
+.image {
+    height: 640px;
+    width: 1440px;
+    background-image: url(../Project/img/01-Картинка-фона.jpg);
+    background-position: center;
+    background-size:cover;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+
+
+.image_about {
+        width: 420px;
+        height: 190px;
+        background: linear-gradient(180deg, rgba(244, 213, 178, 0.8) 0%, rgba(234, 156, 65, 0.8) 100%);
+        position: absolute;
+        top: 349px;
+        left: 730px;
+        padding-top: 15px;
+    }
+
+    .image_about_border {
+        width: 390px;
+        height: 160px;
+        border: 1px solid black;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .image_about_title {
+        font-size: 36px;
+        margin-bottom: 9px;
+        margin-top: 17px;
+        font-family: "Philosopher";
+    }
+
+    .image_about_text {
+        font-size: 12px;
+    }
+
+    .icons_about {
+        padding-top: 80px;
+        text-align: center;
+    }
+
+    .icons_about img {
+        margin-right: 76px;
+    }
+
+    .icons_about img:last-child {
+        margin-right: 0px;
+    }
+
+    span {
+        color: #f15b40;
+    }
+
+    .section_text_box {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .section_title {
+        font-size: 96px;
+        margin-top: 20px;
+        font-family: "Philosopher";
+    }
+
+    .section_text {
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .maps_about {
+        text-align: center;
+    }
+
+    .maps_text {
+        font-size: 36px;
+        text-align: center;
+        margin-bottom: 20px;
+        font-family: "Philosopher";
+    }
+
+    hr {
+        border:1px solid #999999;
+        width: 1024px;
+    }
+
+    
+    /* Медиа-запрос для экранов шириной до 1024px */
+@media (max-width: 1024px) {
+    .image {
+        width: 100%;
+        height: auto;
+    } 
+
+    .image_about {
+        width: 80%;
+        left: 10%;
+    }
+
+    .image_about_border {
+        width: 100%;
+    }
+
+    .section_title {
+        font-size: 72px;
+    }
+
+    .section_text {
+        font-size: 16px;
+    }
+}
+
+/* Медиа-запрос для экранов шириной до 768px */
+@media (max-width: 768px) {
+    .navigation {
+        font-size: 16px;
+    }
+
+    .icons_about img {
+        margin-right: 30px;
+    }
+
+    .image_about {
+        width: 90%;
+        left: 5%;
+    }
+
+    .section_title {
+        font-size: 48px;
+    }
+
+    .section_text {
+        font-size: 14px;
+    }
+}
+
+/* Медиа-запрос для экранов шириной до 480px */
+@media (max-width: 480px) {
+    .navigation {
+        font-size: 14px;
+    }
+
+    .icons_about img {
+        margin-right: 20px;
+    }
+
+    .image_about {
+        width: 100%;
+        left: 0;
+    }
+
+    .section_title {
+        font-size: 36px;
+    }
+
+    .section_text {
+        font-size: 12px;
+    }
+}
